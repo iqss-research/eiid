@@ -1,0 +1,16 @@
+Package: eiPartialID
+Type: Package
+Title: Ecological Regression with Partial Identification (Jiang et al. 2019)
+Version: 0.1.0
+Author: Wenxin Jiang, Gary King, Allen Schmaltz, Martin A. Tanner
+Maintainer: <wjiang@northwestern.edu>, <king@harvard.edu>, <schmaltz@fas.harvard.edu>, <mat132@northwestern.edu>
+Description: This package provides code for the article 'Ecological Regression with Partial Identification', 2019.
+License: The MIT License <https://opensource.org/licenses/MIT>
+Encoding: UTF-8
+LazyData: true
+Imports:
+  sandwich
+RoxygenNote: 6.1.1.9000
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
