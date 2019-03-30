@@ -8,6 +8,8 @@
 #' n (population of each geographic unit);
 #' bd (the true district B);
 #'
+#' @importFrom stats runif
+#'
 #' @examples
 #' generatedData <- generateDataExample3()
 #'
@@ -55,6 +57,8 @@ generateDataExample3 <- function() {
 #' t (proportion of T in each geographic unit);
 #' n (population of each geographic unit);
 #' bd (the true district B);
+#'
+#' @importFrom stats runif rbinom rnorm
 #'
 #' @examples
 #' generatedData <- generateDataExample4()
@@ -104,6 +108,8 @@ generateDataExample4 <- function() {
 #' t (proportion of T in each geographic unit);
 #' n (population of each geographic unit);
 #' bd (the true district B);
+#'
+#' @importFrom stats runif rnorm
 #'
 #' @examples
 #' generatedData <- generateDataExample5()

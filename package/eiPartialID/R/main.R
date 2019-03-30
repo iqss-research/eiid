@@ -9,6 +9,8 @@
 #'
 #' @return List object with the bounds and summary statistics
 #'
+#' @importFrom stats lm coef
+#'
 #' @examples
 #' \dontrun{
 #' outputList <- calcSummaryOutputValues_(x, t, n, TRUE)
@@ -166,6 +168,8 @@ calcSummaryOutputValues_ <- function(x, t, n, useXRangeOffset=TRUE) {
 #'
 #' @return List object with the bounds and summary statistics
 #'
+#' @importFrom stats sd coef lm
+#'
 #' @examples
 #' \dontrun{
 #' outputList <- calcSummaryOutputValues(x, t, n, NULL, TRUE, FALSE)
@@ -319,6 +323,8 @@ generateBounds <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, return
 #'
 #'  Optional: CI_x_truthCaptured If true district Beta is provided in outputListFromGenerateBounds, then this vector contains a boolean for whether or not the
 #'   true value was captured in the proposed CI_x.
+#'
+#' @importFrom stats pnorm
 #'
 #' @examples
 #' \dontrun{
