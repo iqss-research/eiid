@@ -8,6 +8,6 @@ A step-by-step guide for reproducing the results in the paper is available in th
 
 The Dataverse archive also includes all of the data analyzed in the paper.
 
-For convenience, this repo only includes the standalone R package (eiPartialID) in the folder 'package' (which mirrors that in the Dataverse archive). The package should be installed locally from source. An overview of usage is provided in the following HTML vignette, which can be viewed in your browser:
+For convenience, this repo only includes the standalone R package (eiPartialID) in the folder 'package' (which is similar to that in the Dataverse archive, with some minor differences to conform to CRAN policies). The package should be installed locally from source. An overview of usage is provided in the following HTML vignette, which can be viewed in your browser:
 
 [package/eiPartialID/vignettes/rendered_html_archive/2019_02_04/eiPartialID_usage_2019_02_04.html](package/eiPartialID/vignettes/rendered_html_archive/2019_02_04/eiPartialID_usage_2019_02_04.html)
