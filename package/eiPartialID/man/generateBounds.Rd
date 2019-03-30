@@ -56,7 +56,8 @@ x <- inputDataSet$X
 t <- inputDataSet$Y
 n <- inputDataSet$N
 trueBetaB <- inputDataSet$W1
-outputList <- generateBounds(x, t, n, trueBetaB=trueBetaB, useXRangeOffset=TRUE, returnAdditionalStats=FALSE, printSummary=TRUE)
+outputList <- generateBounds(x, t, n, trueBetaB=trueBetaB, useXRangeOffset=TRUE,
+    returnAdditionalStats=FALSE, printSummary=TRUE)
 
 # True B: 0.674809
 # Duncan-Davis bounds: [0.535618, 0.974010]
