@@ -38,6 +38,8 @@ List object with the CI_0.5 bounds:
 simple wrapper around calling generateBounds() followed by evaluateBounds(). Here, the returned object only contains the CI_0.5 bounds.
 }
 \examples{
+\dontrun{
+library("MASS")
 library("eco")
 data("census")
 inputDataSet <- census
@@ -66,5 +68,6 @@ print(outputList)
 #
 # $CI_0.5_truthCaptured
 # [1] TRUE
+}
 
 }

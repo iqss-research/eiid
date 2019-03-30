@@ -10,7 +10,9 @@
 #' @return List object with the bounds and summary statistics
 #'
 #' @examples
+#' \dontrun{
 #' outputList <- calcSummaryOutputValues_(x, t, n, TRUE)
+#' }
 #'
 calcSummaryOutputValues_ <- function(x, t, n, useXRangeOffset=TRUE) {
 
@@ -165,7 +167,9 @@ calcSummaryOutputValues_ <- function(x, t, n, useXRangeOffset=TRUE) {
 #' @return List object with the bounds and summary statistics
 #'
 #' @examples
+#' \dontrun{
 #' outputList <- calcSummaryOutputValues(x, t, n, NULL, TRUE, FALSE)
+#' }
 #'
 calcSummaryOutputValues <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, returnAdditionalStats=FALSE) {
 
@@ -247,6 +251,8 @@ calcSummaryOutputValues <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRU
 #'  Optional: bd True district Beta
 #'
 #' @examples
+#' \dontrun{
+#' library("MASS")
 #' library("eco")
 #' data("census")
 #' inputDataSet <- census
@@ -262,6 +268,7 @@ calcSummaryOutputValues <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRU
 #' # CI_0=[Bl_hat, Bu_hat]: [0.606101, 0.810082]
 #' # CI_1: [0.572566, 0.842403]
 #' # Width-ratio: |CI_0|/|DD|: 0.465295
+#' }
 #'
 #' @export
 #'
@@ -314,6 +321,8 @@ generateBounds <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, return
 #'   true value was captured in the proposed CI_x.
 #'
 #' @examples
+#' \dontrun{
+#' library("MASS")
 #' library("eco")
 #' data("census")
 #' inputDataSet <- census
@@ -336,6 +345,7 @@ generateBounds <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, return
 #' # 2.00 & 0.9772 & TRUE & 0.7657 & FALSE & 0.5390 & 0.8747\\
 #'
 #' # For example, CI_0.5 (0.5893336 0.8262426) corresponds to c(summaryOutputList$CI_x_lower[3], summaryOutputList$CI_x_upper[3])
+#' }
 #'
 #' @export
 #'
@@ -474,6 +484,8 @@ evaluateBounds <- function(outputListFromGenerateBounds) {
 #'   true value was captured in the proposed CI_0.5.
 #'
 #' @examples
+#' \dontrun{
+#' library("MASS")
 #' library("eco")
 #' data("census")
 #' inputDataSet <- census
@@ -502,6 +514,7 @@ evaluateBounds <- function(outputListFromGenerateBounds) {
 #' #
 #' # $CI_0.5_truthCaptured
 #' # [1] TRUE
+#' }
 #'
 #' @export
 #'

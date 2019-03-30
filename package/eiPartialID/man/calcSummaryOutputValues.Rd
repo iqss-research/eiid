@@ -28,6 +28,8 @@ List object with the bounds and summary statistics
 \code{calcSummaryOutputValues()} is an internal/private helper method for calculating the bounds. Called by generateBounds().
 }
 \examples{
+\dontrun{
 outputList <- calcSummaryOutputValues(x, t, n, NULL, TRUE, FALSE)
+}
 
 }

@@ -22,6 +22,8 @@ List object with the bounds and summary statistics
 \code{calcSummaryOutputValues_()} is an internal/private helper method for calculating the bounds. Called by calcSummaryOutputValues().
 }
 \examples{
+\dontrun{
 outputList <- calcSummaryOutputValues_(x, t, n, TRUE)
+}
 
 }
