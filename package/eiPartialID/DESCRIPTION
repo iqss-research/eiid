@@ -1,11 +1,16 @@
 Package: eiPartialID
 Type: Package
-Title: Ecological Regression with Partial Identification (Jiang et al. 2019)
-Version: 0.1.0
+Title: Ecological Regression with Partial Identification
+Version: 0.1.1
 Author: Wenxin Jiang, Gary King, Allen Schmaltz, Martin A. Tanner
 Maintainer: Allen Schmaltz <schmaltz@fas.harvard.edu>
 Contact: <wjiang@northwestern.edu,king@harvard.edu,schmaltz@fas.harvard.edu,mat132@northwestern.edu>
-Description: This package provides code for the article 'Ecological Regression with Partial Identification', 2019.
+Description: Estimate district-level bounds for 2x2 ecological inference based on the approach 
+    described in the forthcoming article Jiang et al. (2019), "Ecological Regression with Partial
+    Identification", Political Analysis. Interval data regression is used to bound the 
+    nonidentified regression parameter in a linear contextual effects model, from which 
+    district-level bounds are derived. The approach here can be useful as a baseline of comparison
+    for future work on ecological inference.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
