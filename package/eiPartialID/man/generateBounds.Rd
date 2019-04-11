@@ -47,7 +47,6 @@ List object with the bounds and summary statistics:
 and to apply the heuristics presented in Jiang et al. 2019.
 }
 \examples{
-\dontrun{
 library("MASS")
 library("eco")
 data("census")
@@ -65,6 +64,5 @@ outputList <- generateBounds(x, t, n, trueBetaB=trueBetaB, useXRangeOffset=TRUE,
 # CI_0=[Bl_hat, Bu_hat]: [0.606101, 0.810082]
 # CI_1: [0.572566, 0.842403]
 # Width-ratio: |CI_0|/|DD|: 0.465295
-}
 
 }

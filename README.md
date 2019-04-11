@@ -1,4 +1,4 @@
-### Code Version 0.1.1
+### Code Version 0.1.2
 
 This repo includes the R package for replicating the results in:
 

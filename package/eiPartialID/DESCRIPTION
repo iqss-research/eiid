@@ -1,7 +1,7 @@
 Package: eiPartialID
 Type: Package
 Title: Ecological Regression with Partial Identification
-Version: 0.1.1
+Version: 0.1.2
 Author: Wenxin Jiang, Gary King, Allen Schmaltz, Martin A. Tanner
 Maintainer: Allen Schmaltz <schmaltz@fas.harvard.edu>
 Contact: <wjiang@northwestern.edu,king@harvard.edu,schmaltz@fas.harvard.edu,mat132@northwestern.edu>
@@ -16,7 +16,9 @@ Encoding: UTF-8
 LazyData: true
 Imports:
   sandwich,
-  stats
+  stats,
+  MASS,
+  eco
 RoxygenNote: 6.1.1.9000
 Suggests: knitr,
     rmarkdown

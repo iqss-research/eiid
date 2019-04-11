@@ -255,7 +255,6 @@ calcSummaryOutputValues <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRU
 #'  Optional: bd True district Beta
 #'
 #' @examples
-#' \dontrun{
 #' library("MASS")
 #' library("eco")
 #' data("census")
@@ -273,7 +272,6 @@ calcSummaryOutputValues <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRU
 #' # CI_0=[Bl_hat, Bu_hat]: [0.606101, 0.810082]
 #' # CI_1: [0.572566, 0.842403]
 #' # Width-ratio: |CI_0|/|DD|: 0.465295
-#' }
 #'
 #' @export
 #'
@@ -328,7 +326,6 @@ generateBounds <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, return
 #' @importFrom stats pnorm
 #'
 #' @examples
-#' \dontrun{
 #' library("MASS")
 #' library("eco")
 #' data("census")
@@ -342,7 +339,7 @@ generateBounds <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, return
 #' summaryOutputList <- evaluateBounds(outputList)
 #'
 #' # $x$ & Nominal coverage (\Phi(x)) & True B in CI_x & Width-ratio: |Proposed width|/|DD| &
-#'     Reverted to DD & Proposed Lower & Proposed Upper \\
+#' #     Reverted to DD & Proposed Lower & Proposed Upper \\
 #' # 0.00 & 0.5000 & TRUE & 0.4653 & FALSE & 0.6061 & 0.8101\\
 #' # 0.25 & 0.5987 & TRUE & 0.5028 & FALSE & 0.5977 & 0.8182\\
 #' # 0.50 & 0.6915 & TRUE & 0.5404 & FALSE & 0.5893 & 0.8262\\
@@ -354,8 +351,7 @@ generateBounds <- function(x, t, n, trueBetaB=NULL, useXRangeOffset=TRUE, return
 #' # 2.00 & 0.9772 & TRUE & 0.7657 & FALSE & 0.5390 & 0.8747\\
 #'
 #' # For example, CI_0.5 (0.5893336 0.8262426) corresponds to
-#'     c(summaryOutputList$CI_x_lower[3], summaryOutputList$CI_x_upper[3])
-#' }
+#' #     c(summaryOutputList$CI_x_lower[3], summaryOutputList$CI_x_upper[3])
 #'
 #' @export
 #'
@@ -494,7 +490,6 @@ evaluateBounds <- function(outputListFromGenerateBounds) {
 #'   true value was captured in the proposed CI_0.5.
 #'
 #' @examples
-#' \dontrun{
 #' library("MASS")
 #' library("eco")
 #' data("census")
@@ -524,7 +519,6 @@ evaluateBounds <- function(outputListFromGenerateBounds) {
 #' #
 #' # $CI_0.5_truthCaptured
 #' # [1] TRUE
-#' }
 #'
 #' @export
 #'
